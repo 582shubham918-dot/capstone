@@ -1,0 +1,16 @@
+{
+	"name": "DestinationDataset_sxz",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "lsfordb",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "AzureSqlTable",
+		"schema": [],
+		"typeProperties": {
+			"schema": "dbo",
+			"table": "bank_customer_master_seed"
+		}
+	}
+}
