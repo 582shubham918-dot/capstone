@@ -110,7 +110,7 @@
 				"schema": [],
 				"typeProperties": {
 					"schema": "dbo",
-					"table": "account_master_seed"
+					"table": "account_master"
 				}
 			},
 			"dependsOn": [
@@ -131,7 +131,7 @@
 				"schema": [],
 				"typeProperties": {
 					"schema": "dbo",
-					"table": "bank_customer_master_seed"
+					"table": "customer_master"
 				}
 			},
 			"dependsOn": [
@@ -540,7 +540,9 @@
 							},
 							"sink": {
 								"type": "AzureSqlSink",
-								"tableOption": "autoCreate"
+								"writeBehavior": "insert",
+								"sqlWriterUseTableLock": false,
+								"disableMetricsCollection": false
 							},
 							"enableStaging": false,
 							"validateDataConsistency": false,
