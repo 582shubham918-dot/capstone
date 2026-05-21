@@ -1,0 +1,16 @@
+{
+	"name": "DestinationDataset_a2p",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "lsfordb",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "AzureSqlTable",
+		"schema": [],
+		"typeProperties": {
+			"schema": "dbo",
+			"table": "account_master_seed"
+		}
+	}
+}
